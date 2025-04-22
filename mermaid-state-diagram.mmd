@@ -1,0 +1,14 @@
+---
+title: Simple sample
+---
+stateDiagram-v2
+    [*] --> Still
+    Still --> [*]
+
+    Still --> Moving
+    Moving --> Still
+    Moving --> Crash
+    Crash --> [*]
+    step_A --> step_B
+    Moving --> step_A
+    Still --> step_C
