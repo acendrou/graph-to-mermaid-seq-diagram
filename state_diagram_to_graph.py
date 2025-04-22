@@ -17,7 +17,7 @@ class MermaidStateDiagram:
 
         for line in lines:
             line = line.strip()
-            if line is "":
+            if line == "":
                 continue
             if line == "---":
                 continue
